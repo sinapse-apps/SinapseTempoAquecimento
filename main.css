@@ -4,22 +4,28 @@
     padding: 0;
     font-family: 'Roboto', sans-serif;
     font-size: 16pt;
+    color: rgb(226, 19, 19);
 }
 html, body, .fullheight {
     min-height: 100% !important;
     height: 100%;
 }
 body{
-    background-color: rgb(230, 236, 243);
+    width: 100%;
 }
 #app{
     width: 100%;
     display: flex;
     flex-direction: column;
     min-height: 100%;
+    background-color: rgb(230, 236, 243);
 }
 #top{    
     padding: 20px;
+}
+#logo{
+    width: 55%;
+    max-width: 350px;
 }
 #main{
     padding: 5px;
@@ -34,10 +40,28 @@ body{
 #bottom{    
     
 }
-.title{
-    color: rgb(226, 19, 19);
-    font-size: 20pt;
-    margin: 5px;
+#result{
+    font-size: 38pt;    
+    margin-top: 20px;
+}
+#btn_install{
+    width: 30px;
+    cursor: pointer;
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    border-radius: 5px;
+    padding: 10px;
+}
+#btn_install:hover{
+    background-color: rgba(0, 0, 0, 0.041);
+}
+#btn_install:active{
+    background-color: rgba(0, 0, 0, 0.144);
+}
+.title{    
+    font-size: 18pt;
+    margin: 10px;
 }
 .sub-title{
 
@@ -60,6 +84,7 @@ body{
 }
 .field img{
     width: 90px;
+    height: 90px;
     background-color: rgb(253, 46, 46);
     border-radius: 50%;
     padding: 10px;    
@@ -68,17 +93,40 @@ body{
     display: block;
     flex: 1;
     text-align: left;
-    padding: 5px;
     padding-left: 20px;
 }
 .field p{
     color: rgb(226, 19, 19);
-    font-size: 16pt;
+    font-size: 14pt;
     text-align: left;
     margin: 5px;
+    white-space: nowrap;
 }
 .field input{
     color: rgb(26, 26, 94);
     font-size: 28pt;
-    max-width: 250px;
+    max-width: 200px;
+}
+.selector{
+    padding: 15px;    
+}
+.selector_item{
+    margin: 5px;
+    display: inline-block;
+}
+.selector_item input{
+    margin: 20px;
+}
+
+
+
+input[type=checkbox]
+{
+  /* Double-sized Checkboxes */
+  -ms-transform: scale(3); /* IE */
+  -moz-transform: scale(3); /* FF */
+  -webkit-transform: scale(3); /* Safari and Chrome */
+  -o-transform: scale(3); /* Opera */
+  transform: scale(3);
+  padding: 10px;
 }

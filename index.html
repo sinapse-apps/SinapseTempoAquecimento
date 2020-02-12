@@ -4,6 +4,7 @@
     <meta charset='utf-8'>
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
     <title>Sinapse - Cálculo de tempo de Aquecimento</title>
+    <link rel="icon" href="./images/ic_launcher/web_hi_res_512.png" type="image/x-icon" />  
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
     <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
@@ -12,7 +13,8 @@
 <body>
     <div id="app">    
         <div id="top" class="container">
-            <img src="./images/logohorizon-simple.png"/>
+            <img id="btn_install" src="./images/install_navy.png"/>
+            <img id="logo" src="./images/logohorizon-simple.png"/>
         </div>    
         <div id="main" class="container">
             <p class="title">Calculo de Tempo de Aquecimento</p>
@@ -21,30 +23,46 @@
                     <img src="./images/thermometer_white.png"/>
                     <div>
                         <p>Temperatura Inicial (Cº)</p>
-                        <input type="text" maxlength="3"/>
+                        <input id="field_temp_inicial" type="text" maxlength="3"/>
+                        <p id="field_temp_inicial_error" class="error" style="display: none;"></p>
                     </div> 
                 </div>    
                 <div class="field">
                     <img src="./images/thermometer_white.png"/>
                     <div>
                         <p>Temperatura Final (Cº)</p>
-                        <input type="text" maxlength="3"/>
+                        <input id="field_temp_final" type="text" maxlength="3"/>
+                        <p id="field_temp_final_error" class="error" style="display: none;"></p>
                     </div> 
                 </div>   
                 <div class="field">
                     <img src="./images/drop_white.png"/>
                     <div>
                         <p>Volume (Litros)</p>
-                        <input type="text" maxlength="6"/>
+                        <input id="field_volume" type="text" maxlength="6"/>
+                        <p id="field_volume_error" class="error" style="display: none;"></p>
                     </div> 
-                </div>               
+                </div>      
+                <div>
+                    <p>Potência do aquecedor</p>
+                    <div class="selector">
+                        <div class="selector_item">
+                            <input type="checkbox" id="cb_5000w" name="cb_5000w" value="5000">
+                            <label for="cb_5000w">5000W</label>
+                        </div>
+                        <div class="selector_item">
+                            <input type="checkbox" id="cb_8000w" name="cb_8000w" value="8000">
+                            <label for="cb_8000w">8000W</label>
+                        </div>
+                    </div>
+                </div>         
             </div>            
             <div class="container_item">
-                Result
+                <p id="result">00:00:00</p>
             </div>
-        </div>    
+        </div>
+    </div>    
         <div id="bottom" class="container">
-            bottom?
         </div>    
     </div>
 </body>
