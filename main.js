@@ -101,7 +101,7 @@ function convertSeconds(){
 //PWA CODE
 if('serviceWorker' in navigator) {
     navigator.serviceWorker
-             .register('/SinapseTempoAquecimento/sw.js')
+             .register('/calculotempoaquecimento/sw.js')
              .then(function() { console.log('Service Worker Registered'); });
 }
 
