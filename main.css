@@ -1,6 +1,6 @@
 *{
     text-align: center;
-    margin:  0;
+    margin:  0 auto;
     padding: 0;
     font-family: 'Roboto', sans-serif;
     font-size: 16pt;
@@ -106,6 +106,14 @@ body{
     color: rgb(26, 26, 94);
     font-size: 28pt;
     max-width: 200px;
+}
+.field .error{
+    text-align: center;
+    font-size: 12pt;
+    color: #FFF;
+    background-color: #F00;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 .selector{
     padding: 15px;    
