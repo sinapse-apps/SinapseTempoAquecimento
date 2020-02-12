@@ -4,7 +4,7 @@
   "display": "fullscreen",
   "icons": [
     {
-      "src": "images/ic_launcher/web_hi_res_512.png",
+      "src": "/SinapseTempoAquecimento/images/ic_launcher/web_hi_res_512.png",
       "sizes": "512x512",
       "type": "image/png"
     }
