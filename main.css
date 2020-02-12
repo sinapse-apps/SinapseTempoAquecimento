@@ -21,11 +21,11 @@ body{
     background-color: rgb(230, 236, 243);
 }
 #top{    
-    width: 100%;
-    padding: 20px;
+    width: 100%;    
 }
 #logo{
     width: 55%;
+    margin: 20px;
     max-width: 350px;
 }
 #main{
