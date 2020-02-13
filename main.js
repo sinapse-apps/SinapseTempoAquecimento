@@ -105,10 +105,13 @@ if('serviceWorker' in navigator) {
              .then(function() { console.log('Service Worker Registered'); });
 }
 
+if (window.matchMedia('(display-mode: standalone)').matches) {  
+    btn_install.style.display = 'none';
+}
+
 // Code to handle install prompt on desktop
 
 let deferredPrompt;
-btn_install.style.display = 'none';
 
 window.addEventListener('beforeinstallprompt', (e) => {
   // Prevent Chrome 67 and earlier from automatically showing the prompt
@@ -135,6 +138,11 @@ window.addEventListener('beforeinstallprompt', (e) => {
       });
   });
 });
+
+window.addEventListener('appinstalled', (evt) => {  
+    console.log("App already installed");
+    btn_install.style.display = 'none';
+  });
 
   
 
