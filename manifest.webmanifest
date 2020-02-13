@@ -9,7 +9,7 @@
       "type": "image/png"
     }
   ],
-  "name": "Sinapse Calculo Tempo de Aquecimento",
+  "name": "Tempo de Aquecimento",
   "short_name": "Tempo de Aquecimento",
   "start_url": "/SinapseTempoAquecimento/index.html"
 }
