@@ -12,6 +12,7 @@ html, body, .fullheight {
 }
 body{
     width: 100%;
+    min-width: 360px;
 }
 #app{
     width: 100%;
