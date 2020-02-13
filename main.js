@@ -104,16 +104,12 @@ if('serviceWorker' in navigator) {
              .register('/SinapseTempoAquecimento/sw.js')
              .then(function() { console.log('Service Worker Registered'); });
 }
-
-if (window.matchMedia('(display-mode: standalone)').matches) {  
-    btn_install.style.display = 'none';
-}
-
 // Code to handle install prompt on desktop
 
 let deferredPrompt;
 
 window.addEventListener('beforeinstallprompt', (e) => {
+    console.log("beforeinstallprompt");
   // Prevent Chrome 67 and earlier from automatically showing the prompt
   e.preventDefault();
   // Stash the event so it can be triggered later.
@@ -143,6 +139,11 @@ window.addEventListener('appinstalled', (evt) => {
     console.log("App already installed");
     btn_install.style.display = 'none';
   });
+
+
+if (window.matchMedia('(display-mode: standalone)').matches) {  
+    btn_install.style.display = 'none';
+}
 
   
 
