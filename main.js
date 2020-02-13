@@ -107,9 +107,8 @@ if('serviceWorker' in navigator) {
 // Code to handle install prompt on desktop
 
 let deferredPrompt;
-
+btn_install.style.display = 'none';
 window.addEventListener('beforeinstallprompt', (e) => {
-    console.log("beforeinstallprompt");
   // Prevent Chrome 67 and earlier from automatically showing the prompt
   e.preventDefault();
   // Stash the event so it can be triggered later.
